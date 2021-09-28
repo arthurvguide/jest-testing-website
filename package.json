@@ -1,0 +1,22 @@
+{
+  "name": "jest-testing-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arthurvguide/jest-testing-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arthurvguide/jest-testing-website/issues"
+  },
+  "homepage": "https://github.com/arthurvguide/jest-testing-website#readme",
+  "dependencies": {
+    "jest": "^27.2.3"
+  }
+}
