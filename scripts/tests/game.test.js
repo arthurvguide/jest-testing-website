@@ -2,7 +2,7 @@
 /**
  * @jest-environment jsdom
  */
-const { game, newGame, showScore} = require("..//game");
+const { game, newGame, showScore, addTurn} = require("..//game");
 beforeAll( () => {
     let fs = require("fs");
     let fileContents = fs.readFileSync("index.html", "utf-8");
@@ -40,8 +40,8 @@ describe("new game works correctly", () => {
     test("should set game score to 0", () => {
         expect(game.score).toEqual(0);
     });
-    test("should clear currentGame", () => {
-        expect(game.currentGame).toEqual([]);
+    test("should add one move to the computer's game array", () => {
+        expect(game.currentGame.length).toBe(1);
     });
     test("should clear playerMoves", () => {
         expect(game.playerMoves).toEqual([]);
