@@ -53,6 +53,12 @@
      test("should add one move to the computer's game array", () => {
          expect(game.currentGame.length).toBe(1);
      });
+     test("expects data-listener to be true", () => {
+         const elements = document.getElementsByClassName("circle");
+         for (let element of elements ) {
+             expect(element.getAttribute("data-listener")).toEqual("true");
+         };
+     });
  });
  
  describe("gameplay works correctly", () => {
